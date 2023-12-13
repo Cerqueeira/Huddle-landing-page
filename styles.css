@@ -18,17 +18,11 @@
 }
 
 body {
-  /* padding: 2rem; */
-  /* margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  /* max-width: 1120px; */
 }
 
 .header {
