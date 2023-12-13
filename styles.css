@@ -40,6 +40,7 @@ body {
 
 .backgroundtop {
   background-image: url(./images/bg-hero-desktop.svg);
+  background-size: cover;
 }
 
 span {
