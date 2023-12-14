@@ -47,6 +47,10 @@ span {
   text-align: center;
 }
 
+.header img {
+  width: 25%;
+}
+
 h2,
 span {
   color: var(--very-dark-cyan);
@@ -81,6 +85,7 @@ button {
   font-weight: 700;
   width: 50%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.3s;
 }
 
 .card1,
@@ -239,12 +244,14 @@ span:hover,
 button:hover {
   opacity: 0.5;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .col2 p:hover,
 .col3 p:hover {
   text-decoration: underline;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .lucide-facebook:hover,
@@ -252,16 +259,22 @@ button:hover {
   border-color: var(--pink);
   stroke: var(--pink);
   fill: var(--pink);
+  transition: all 0.2s;
 }
 
 .lucide-instagram:hover {
   border-color: var(--pink);
   stroke: var(--pink);
+  transition: all 0.2s;
 }
 
 /* media query */
 
 @media only screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
   .flextop {
     flex-direction: column;
     align-items: center;
@@ -310,5 +323,56 @@ button:hover {
 
   .col4 {
     justify-content: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  button {
+    width: 75%;
+  }
+
+  .header {
+    padding: 1rem 1rem 3rem 1rem;
+  }
+
+  .header img,
+  .header span {
+    width: 40%;
+  }
+
+  .flextop {
+    padding: 1rem;
+  }
+
+  .middle {
+    padding: 1rem;
+    padding-bottom: 7rem;
+  }
+
+  .bottom {
+    margin-bottom: -20%;
+  }
+
+  .footer {
+    padding: 8rem 1rem 1rem 1rem;
+  }
+  .col1 {
+    gap: 1.5rem;
+  }
+
+  h2,
+  .title {
+    font-size: larger;
+  }
+
+  .top {
+    padding: 1rem;
+  }
+
+  .backgroundtop {
+    background-image: url(./images/bg-hero-mobile.svg);
+    
   }
 }
